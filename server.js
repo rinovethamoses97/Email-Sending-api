@@ -8,14 +8,14 @@ var transporter = nodemailer.createTransport({
     port: 465,
     secure: true,
     auth: {
-      user: 'emaile729@gmail.com',
-      pass: '#email1234'
+      user: 'pmstransactions@gmail.com',
+      pass: 'pms@1234'
     }
  });
 app.get('/sendEmail/:to/:content',function(req,res){
 	console.log("Email Sending started");
 	var mailOptions = {
-        from: 'emaile729@gmail.com',
+        from: 'pmstransactins@gmail.com',
         to: req.params.to,
         subject: 'Notification..',
         text: req.params.content
